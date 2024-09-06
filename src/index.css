@@ -1,0 +1,479 @@
+
+* {box-sizing: border-box;}
+/*header pannel*/
+
+body { 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://s3-alpha-sig.figma.com/img/364d/4ba5/594b192718adcca8c5aa8c560f08638d?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iAZYoDtwHsdBAlCt2HIkenpUqStmaOUCOAnjLup4aJdyyJ2L4eOyxTBSnMmUMzKdTGJre-LHJI-GZft1M7ey1POuswwsn9yzP5LwioIhEyVcTokEUcC2cs31ARuF78Xo571lITpfszHP9sU2Mz6-OZHYr6R15V0WVD66sRbiouVf1cp9aKR2WwUOTVLBjI3xIPbPWKWBQalwi6d8p8Bs8QQYpt8LaYG53mDxZVNUmGh2-xpmvsg3owkqV4q47WP6cS6btOOQGIqjF4XwTPdc~zoI3PQzHlnMDqZZTIy-EGyF6mCcREBE3q8P-zNcSIOvl8FFhXiQfAyH~oEdaq7AHg__');
+  background-size: 1980px 740px;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-attachment: scroll
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 100px 20px 100px;
+  border-bottom: 2px solid rgba(46, 46, 46, 0.7);
+  
+}
+
+.wrap-logo {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+header a {
+  color: #6b6464;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px; 
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+header a:hover {
+  color: #ffffff;
+  
+}
+
+header a.active {
+  background-color: #1100ff;
+  color: #ffffff;
+  padding: 12px 30px;
+  
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+/*Текст после Шапки*/
+.HeadLine3
+{
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  display: flex;
+  font-size: 36px; 
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.Subtitle1-medium
+{
+  display: flex;
+  flex-direction: row;
+  color: #ACAFB8;
+  font-size: 20px; 
+  font-family: "Poppins", sans-serif;
+  font-weight:500;
+}
+.Capture3-Regular
+{
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  justify-content: center; 
+  align-items: left; 
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.Headline6
+{  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center; 
+  color: #000000;
+  font-weight: 700;
+  font-size: 25px; 
+  font-family: "Poppins", sans-serif;
+  font-weight:600;
+}
+.Headline4
+{
+  display: flex;
+  flex-direction: row;
+  font-weight: 700;
+  justify-content: left; 
+  color: #000000;
+  font-size: 35px; 
+  font-family: "Poppins", sans-serif;
+  font-weight:600;
+}
+/*поисковая*/
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* добавляем центрирование по вертикали */
+}
+
+form {
+  margin-top:25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 60px;
+  background-image: url('C:\\Users\\Никита\\Practika\\src\\Pictures\\Union.svg');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+input[type="text"] {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #4C526A;
+  border: none;
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
+}
+/*music panel*/
+.line {
+  margin-top: 50px;
+  display: flex;
+  
+}
+
+.line img {
+  margin: 0 50px; 
+  width: 100px;
+  align-items: center; 
+  height: auto; 
+  margin-left: 110px;
+  
+}
+
+.audio-column {
+  width: 1300px;
+  display: flex;
+  flex-direction: column;
+  
+  margin-left: 110px;
+  
+}
+
+
+.container {
+    margin-left: 6.5rem;
+    padding: 0.5rem;
+    
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    width: 1680px;
+}
+
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.9rem;
+}
+
+.tab > input[type="radio"] {
+  display: none;
+  
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-left: 500px;
+  gap:-10px;
+}
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3,
+#tab-btn-4:checked~#content-4, 
+#tab-btn-5:checked~#content-5, 
+#tab-btn-6:checked~#content-6  {
+  display: block;
+  
+}
+
+.tab > label {
+  padding-top: 0.5rem;
+  cursor: pointer;
+  transition: color .15s ease-in-out, border-color .15s ease-in-out;
+  color: #4C526A;
+  background: 0 0;
+  cursor: pointer; 
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.tab > label:hover {
+  border-bottom: 2px solid #818181; 
+  padding-bottom: 2px; 
+  font-weight: bold; 
+}
+
+.tab > input[type="radio"]:checked + label {
+  cursor: default;
+  font-weight: bold;
+  color: #212529;
+  border-bottom: 2px solid #212529; 
+  padding-bottom: 2px;
+}
+
+.audio-player {
+  display: flex;
+  align-items: center;
+  margin-left:-500px;
+  gap:150px;
+  font-weight:500 ;
+  font-family:"Poppins", sans-serif ;
+  font-size: 16;
+}
+
+.play-button,
+.pause-button {
+  width: 50px; 
+  height: 50px; 
+  border: none;
+  background: none;
+}
+
+.play-button {
+  background-image: url('C:\Users\Никита\Practika\src\Pictures\Group 1 (1).png');
+  background-repeat: no-repeat;
+}
+
+.pause-button {
+  background-image: url('C:\Users\Никита\Practika\src\Pictures\Group 1 (1).png');
+  background-repeat: no-repeat;
+}
+
+.images-container
+{
+  
+  display: flex;
+  margin-left: 200px;
+  gap:20px;
+}
+
+/*browes by categories*/
+.music-categories-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #020202;
+  height: 500px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap; /* Разрешает перенос элементов на новую строку */
+  justify-content: space-between; /* Равномерное распределение изображений */
+  width: 1600px; /* Пример значения ширины блока */
+}
+
+.image-container img {
+  width: 240px;
+  height: 220px;/* Ширина изображения, чтобы уместить по 2 в ряду */
+  margin-left: 15px; /* Дополнительные отступы между изображениями */
+}
+
+/*на пять контейнеров для whyus*/
+.block {
+  width: 270px;
+  height: 160px;
+  background-color: #ffffff;
+  border: 1px solid #020202;
+  display: flex;
+  margin: 5px;
+  position: relative;
+}
+
+.blocks {
+  display: flex;
+  border: 1px solid #880303;
+  margin-top: -90px;
+}
+
+.block:first-child {
+margin-inline-start: 111px;
+margin-inline-end: 544px;
+}
+
+.bloc{
+  width: 270px;
+  height: 160px;
+  background-color: #ffffff;
+  border: 1px solid #020202;
+  display: flex;
+  margin: 5px;
+  position: relative;
+  }
+.blocs {
+  margin-top: 50px;
+    display: flex;
+    border: 1px solid #880303;
+    margin-bottom: 100px;
+}
+.bloc:first-child {
+  margin-inline-start: 1060px;
+  margin-inline-end: 1px;
+  }
+  .text {
+    position: absolute;
+
+}
+/*Download sound effects*/
+.container-download {
+  text-align: center;
+  height: 696px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#0432DF;
+  
+}
+
+.text-download {
+  margin-bottom: 30px; 
+}
+
+.blocks-download {
+  display: flex;
+  justify-content: center;
+  gap: 40px; 
+  
+}
+
+.block-download {
+  width: 300px;
+  height: 300px;
+  text-align: left;
+  background-color:#0432DF;
+  border-radius: 12px;
+  border: 1px solid #CDD6F9;
+  margin-bottom: 50px;
+}
+/*experions from castomers*/
+.container-castomers {
+  text-align: center;
+  height: 696px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#ffffff;
+  
+}
+
+.text-castomers {
+  margin-bottom: 40px;
+  
+}
+.text-font-Caption3-Medium
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight:500;
+  color:#4C526A;
+}
+.text-font-Subtitle2-SemiBold
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight:600;
+  color: #020D37;
+}
+.blocks-castomers {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  
+}
+
+.block-castomers {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  margin-bottom: 50px;
+  
+}
+  
+/*experions from castomers*/
+.container-footer {
+  width: Fixed (1,244px)px;
+  height: Fixed (295px)px;
+  top: 3998px;
+  padding: 50px 100px 50px 100px;
+  gap: 0px;
+  opacity: 0px;
+  background: #020D37;
+
+}
+
+.text-footer {
+  margin-bottom: 40px;
+  gap:14px;
+}
+.text-font-Caption3-Medium
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight:500;
+  color:#4C526A;
+  
+}
+.text-font-Subtitle2-SemiBold
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight:600;
+  color: #020D37;
+  
+}
+.Caption2-Reguler{
+font-family: 'Poppins', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 28.8px;
+letter-spacing: -0.05em;
+text-align: left;
+color: #ACAFB8;
+}
+
+
+.blocks-footer {
+  display: flex;
+  justify-content: center;
+  gap: 310px; 
+}
+
+.block-footer {
+  width: 06x;
+  height: 195px;
+  text-align: center;
+  margin-bottom: 50px;
+  border: 1px solid #0033ff;
+  
+}
+  
