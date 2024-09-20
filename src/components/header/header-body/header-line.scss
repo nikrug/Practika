@@ -1,0 +1,188 @@
+
+
+.header-line{
+  display: flex;
+  order:1;
+  //СТИЛИ ДЛЯ ШАПКИ
+  body { 
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100%);
+    flex-wrap: wrap;
+    padding: 10px 100px 20px 100px;
+    border-bottom: 2px solid rgba(46, 46, 46, 0.7);
+    
+  }
+  
+  .wrap-logo {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+  
+  header a {
+    color: #6b6464;
+    padding: 1dvh;
+    text-decoration: none;
+    font-size: calc(10px + 0.5vw ); 
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+  
+  header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  header a:hover {
+    color: #ffffff;
+    
+  }
+  
+  header a.active {
+    background-color: #1100ff;
+    color: #ffffff;
+    padding: 12px 30px;
+    
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+//СТИЛИ ДЛЯ ЛОГИНА
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .close {
+        background: none;
+        border: none;
+  }
+
+  .login-form{
+    height: 691px;
+    width: 480px;
+    background-color: #ffffff;
+    border: 2px solid red;
+    border-radius: 24px;
+    display:flex;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 134px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .email-password-container{
+    background-color:#EEEEEE;
+    border-radius: 8px;
+    border:0px;
+    font-family:'Poppins', sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    color: #4C526A;
+    width: 400px;
+    height: 50px;
+  }
+  //DROPDOUWN SYTLE
+ // Style the button 
+.dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: transparent;
+  
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  text-align: left;
+  align-items: left;
+  display: none;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  overflow-y: auto;
+  background-color:  #030B26;
+  z-index: 99; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+//ТЕ
+  $text-font:"Poppins", sans-serif;
+  .text-dezine-small-grey{
+    color: grey; size: 16px; font-weight: 500;font-family: $text-font;
+ }
+  
+  @media(max-width: 610px)
+  {
+   header a{
+    font-size: 0;
+    
+   }
+    nav{
+      font-size: 10px;
+      background-color: #030B26;
+    }
+    header{
+      padding: 20px 20px 1px 20px;
+      background-color: #030B26;
+      }
+      nav{
+        display: none;
+      }
+    .dropdown{
+      display: block;
+      }
+      .login-form{
+        
+        height: 100%;
+        width: 100%;
+        background-color: #ffffff;
+        border: 2px solid red;
+        border-radius: 0px;
+        display:flex;
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: center;
+      }
+
+   }
+
+}

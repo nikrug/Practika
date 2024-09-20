@@ -1,13 +1,15 @@
-<script lang="ts">
-
-
+<script>
+import HeaderBody from './components/header/header-body/header-body.vue';
 export default {
+  components:{
+  HeaderBody,
+  },
   methods: {
     playMusic() {
-      const audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+      
       audio.play();
     }
-  }
+  } 
 }
 </script>
 
@@ -19,11 +21,15 @@ export default {
 </style>
 
 <template>
+
+<HeaderBody>
+</HeaderBody>
+
 <!--Шапка (ДОБАВИТЬ ЛОГОТИП ВВИДЕ КАРТИНКИ)-->
-  <header>
+  <!-- <header>
     
     <div class="wrap-logo">
-  <a href="#logo" class="logo"><img src="C:\Users\Никита\Practika\src\Logo\WavesCo.svg" ></a>
+  <a href="#logo" class="logo"><img src="" ></a>
   </div>
   <nav>
     <a href="#home">Home</a>
@@ -36,15 +42,15 @@ export default {
   </nav>
 
   </header>
-  <!--Текст после шапки(ДОБАВИТЬ КАРТИНКУ С ЛУПОЙ))-->
-  <div class="HeadLine3"style="justify-content: center; align-items: center;  margin-top: 95px;"> Free download sound effects without copyright</div>
-  <div class="Subtitle1-medium"style="justify-content: center; align-items: center;  margin-top: 16px; "> Downlad free copyright sound effect for your YouTube video and any use.</div>
+  Текст после шапки(ДОБАВИТЬ КАРТИНКУ С ЛУПОЙ))-->
+  <!-- <div class="HeadLine3"style="justify-content: center; align-items: center;  margin-top: 95px;"> Free download sound effects without copyright</div>
+  <div class="Subtitle1-medium"style="justify-content: center; align-items: center;  margin-top: 16px; "> Downlad free copyright sound effect for your YouTube video and any use.</div> -->
   <!--поисковая строка-->
-  <div class="search-container">
+  <!-- <div class="search-container">
   <form >
     <input style="font-family:'Poppins', sans-serif;font-weight: 500;font-size:16px;color: #4C526A; width: 100%; line-height: 60px; padding-left: 50px;" type="text" id="search" name="search" placeholder="Search sound effects">
   </form>
-</div>
+</div>  -->
 
 <!--текст после поисковой строки-->
   <div class="Capture3-Regular"style="margin-left: -100px;"> Try keyword:happy, funny, natural, horror, jumpscare and more</div>
@@ -99,9 +105,7 @@ export default {
       <p style="color: #4C526A;">Shocking, jumpscare</p>
     </div>
     <div class="images-container">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (1).png" alt="Сердечко">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (2).png" alt="Загрузка">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (3).png" alt="Три">
+   
   </div>
   </div>
   <div class="audio-player">
@@ -135,9 +139,7 @@ export default {
       <p style="color: #4C526A;">Shocking, jumpscare</p>
     </div>
     <div class="images-container">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (1).png" alt="Сердечко">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (2).png" alt="Загрузка">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (3).png" alt="Три">
+  
   </div>
   </div>
 
@@ -161,9 +163,7 @@ export default {
       <p style="color: #4C526A;">Shocking, jumpscare</p>
     </div>
     <div class="images-container">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (1).png" alt="Сердечко">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (2).png" alt="Загрузка">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (3).png" alt="Три">
+    
   </div>
   </div>
     </div>
@@ -188,9 +188,7 @@ export default {
       <p style="color: #4C526A;">Shocking, jumpscare</p>
     </div>
     <div class="images-container">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (1).png" alt="Сердечко">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (2).png" alt="Загрузка">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (3).png" alt="Три">
+ 
   </div>
   </div>
 
@@ -214,9 +212,7 @@ export default {
       <p style="color: #4C526A;">Shocking, jumpscare</p>
     </div>
     <div class="images-container">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (1).png" alt="Сердечко">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (2).png" alt="Загрузка">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (3).png" alt="Три">
+  
   </div>
   </div>
     </div>
@@ -240,10 +236,7 @@ export default {
     <div class="audio-info">
       <p style="color: #4C526A;">Shocking, jumpscare</p>
     </div>
-    <div class="images-container">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (1).png" alt="Сердечко">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (2).png" alt="Загрузка">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (3).png" alt="Три">
+  
   </div>
   </div>
 
@@ -269,9 +262,7 @@ export default {
       <p style="color: #4C526A;">Shocking, jumpscare</p>
     </div>
     <div class="images-container">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (1).png" alt="Сердечко">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (2).png" alt="Загрузка">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (3).png" alt="Три">
+ 
   </div>
   </div>
 
@@ -295,9 +286,7 @@ export default {
       <p style="color: #4C526A;">Shocking, jumpscare</p>
     </div>
     <div class="images-container">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (1).png" alt="Сердечко">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (2).png" alt="Загрузка">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (3).png" alt="Три">
+ 
   </div>
   </div>
 
@@ -323,9 +312,7 @@ export default {
       <p style="color: #4C526A;">Shocking, jumpscare</p>
     </div>
     <div class="images-container">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (1).png" alt="Сердечко">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (2).png" alt="Загрузка">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (3).png" alt="Три">
+ 
   </div>
   </div>
 
@@ -349,9 +336,7 @@ export default {
       <p style="color: #4C526A;">Shocking, jumpscare</p>
     </div>
     <div class="images-container">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (1).png" alt="Сердечко">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (2).png" alt="Загрузка">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (3).png" alt="Три">
+
   </div>
   </div>
   <div class="audio-player">
@@ -374,16 +359,14 @@ export default {
       <p style="color: #4C526A;">Shocking, jumpscare</p>
     </div>
     <div class="images-container">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (1).png" alt="Сердечко">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (2).png" alt="Загрузка">
-    <img src="C:\Users\Никита\Practika\src\Pictures\icon (3).png" alt="Три">
+
   </div>
   </div>
     </div>
   
   </div>
 
-</div>
+
 <p style="margin-left: 100px; font-family: 'Poppins', sans-serif;font-weight: 600;color:#0432DF;
 "><a href="">See all sound effects </a></p>
  <!--КАТЕГОРИИ С КАРТИНКАМИ МУЗЫКИ (УВЕЛИЧИТ КАРТИНКИ)-->
@@ -393,18 +376,7 @@ export default {
 
 <div class="music-categories-block img">
   <div class="image-container">
-      <img src="C:\Users\Никита\Practika\src\brose by categ img\Sound category item (1).svg"> 
-      <img src="C:\Users\Никита\Practika\src\brose by categ img\Sound category item (2).svg"> 
-      <img src="C:\Users\Никита\Practika\src\brose by categ img\Sound category item (3).svg"> 
-      <img src="C:\Users\Никита\Practika\src\brose by categ img\Sound category item (4).svg"> 
-      <img src="C:\Users\Никита\Practika\src\brose by categ img\Sound category item (5).svg"> 
-      <img src="C:\Users\Никита\Practika\src\brose by categ img\Sound category item (7).svg">
-      <img src="C:\Users\Никита\Practika\src\brose by categ img\Sound category item (7).svg"> 
-      <img src="C:\Users\Никита\Practika\src\brose by categ img\Sound category item (8).svg"> 
-      <img src="C:\Users\Никита\Practika\src\brose by categ img\Sound category item (9).svg"> 
-      <img src="C:\Users\Никита\Practika\src\brose by categ img\Sound category item (10).svg"> 
-      <img src="C:\Users\Никита\Practika\src\brose by categ img\unsplash_PSYliyPf7yA.svg"> 
-      <img src="C:\Users\Никита\Practika\src\brose by categ img\Sound category item (9).svg"> 
+   
     </div>
   </div>
 
@@ -422,7 +394,7 @@ export default {
             </div>
         </div>
         <div class="block"style="margin-right: 150px">
-          <img style="width: 56px;height: 56px;margin-left:10px;" src="C:\Users\Никита\Practika\src\whyus img\icon-primary (1).svg"> 
+          <img style="width: 56px;height: 56px;margin-left:10px;" src=""> 
             <div class="text">
               <p style="font-family: 'Poppins', sans-serif;font-size: 18px; font-weight: 600;color:#020D37;margin-top:70px;">
                 1.203.322 Customer satisfied</p>
@@ -431,7 +403,7 @@ export default {
             </div>
         </div>
         <div class="block">
-          <img style="width: 56px;height: 56px;margin-left:10px;" src="C:\Users\Никита\Practika\src\whyus img\icon-primary.svg">
+          <img style="width: 56px;height: 56px;margin-left:10px;" src="">
         <div class="text">
           
               <p style="font-family: 'Poppins', sans-serif;font-size: 18px; font-weight: 600;color:#020D37;margin-top:70px;">
@@ -444,7 +416,7 @@ export default {
 
     <div class="blocs bottom-blocks">
         <div class="bloc"style="margin-right: 150px">
-          <img style="width: 56px;height: 56px;margin-left:10px;" src="C:\Users\Никита\Practika\src\whyus img\icon-primary (2).svg">
+          <img style="width: 56px;height: 56px;margin-left:10px;" src="">
           <div class="text">
               <p style="font-family: 'Poppins', sans-serif;font-size: 18px; font-weight: 600;color:#020D37;margin-top:70px;">
                 Royalty-free</p>
@@ -453,7 +425,7 @@ export default {
             </div>
         </div>
         <div class="bloc"style="margin-right: 50px">
-          <img style="width: 56px;height: 56px;;margin-left:10px;" src="C:\Users\Никита\Practika\src\whyus img\icon-primary (3).svg">
+          <img style="width: 56px;height: 56px;;margin-left:10px;" src="">
           <div class="text">
               <p style="font-family: 'Poppins', sans-serif;font-size: 18px; font-weight: 600;color:#020D37;margin-top:70px;">
                 Provide proper sounds</p>
@@ -506,11 +478,11 @@ margin-top:-35px;">TESTIMONIALS</p>
   </div>
   <div class="blocks-castomers">
   <div   class="block-castomers">
-    <img style="width: 40px;height: 40px;margin-left:10px;" src="C:\Users\Никита\Practika\src\castomers img\ri_double-quotes-r.svg">
+    <img style="width: 40px;height: 40px;margin-left:10px;" src="">
     <div class="text-font-Caption3-Medium">
       <p>The sounds from WavesCo is great and it really helps our team to save time and production costs.</p>
     </div>
-    <img style="width: 90px;height: 80px;margin-left:10px;" src="C:\Users\Никита\Practika\src\castomers img\Frame 45 (2).svg">
+    <img style="width: 90px;height: 80px;margin-left:10px;" src="">
     <div class="text-font-Subtitle2-SemiBold">
       <p>Anne Joyce</p>
     </div>
@@ -519,11 +491,11 @@ margin-top:-35px;">TESTIMONIALS</p>
     </div>
   </div>
     <div  class="block-castomers">
-      <img style="width: 40px;height: 40px;margin-left:10px;" src="C:\Users\Никита\Practika\src\castomers img\ri_double-quotes-r.svg">
+      <img style="width: 40px;height: 40px;margin-left:10px;" src="">
     <div class="text-font-Caption3-Medium">
       <p>WavesCo was a great choice for our team for film production, the quality is amazingly great.</p>
     </div>
-    <img style="width: 90px;height: 80px;margin-left:10px;" src="C:\Users\Никита\Practika\src\castomers img\Frame 45 (1).svg">
+    <img style="width: 90px;height: 80px;margin-left:10px;" src="">
     <div class="text-font-Subtitle2-SemiBold">
       <p>Edward Sann</p>
     </div>
@@ -533,11 +505,11 @@ margin-top:-35px;">TESTIMONIALS</p>
     </div>
     
     <div  class="block-castomers">
-      <img style="width: 40px;height: 40px;margin-left:10px;" src="C:\Users\Никита\Practika\src\castomers img\ri_double-quotes-r.svg">
+      <img style="width: 40px;height: 40px;margin-left:10px;" src="">
     <div class="text-font-Caption3-Medium">
       <p> Perfect way to get best quality sound effects for youtube videos. Thanks to WavesCo team.</p>
     </div>
-    <img style="width: 90px;height: 80px;margin-left:10px;" src="C:\Users\Никита\Practika\src\castomers img\Frame 45.svg">
+    <img style="width: 90px;height: 80px;margin-left:10px;" src="">
     <div class="text-font-Subtitle2-SemiBold">
       <p>Ronn D.</p>
     </div>
@@ -547,14 +519,14 @@ margin-top:-35px;">TESTIMONIALS</p>
     </div>
 
   </div>
-  <img style="width: 40px;height: 40px;margin-left:10px;" src="C:\Users\Никита\Practika\src\castomers img\Divider.svg">
+  <img style="width: 40px;height: 40px;margin-left:10px;" src="">
   </div>
 <!--БЛОК FOOTER-->
   <div class="container-footer">
 
   <div class="blocks-footer">
   <div style="width: 298px;height: 137px;"  class="block-footer">
-    <img style="margin-right: 160px" src="C:\Users\Никита\Practika\src\Logo\WavesCo.svg">
+    <img style="margin-right: 160px" src="">
     <div class="Caption2-Reguler">
       <p>WavesCo is a platform for providing premium sound effects for Youtube videos, movies and many more.</p>
     </div>
