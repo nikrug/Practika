@@ -1,5 +1,8 @@
 <script >
 import BrouseByCategoryes from './components/Brouse-by-categoryes/brouse-by-categoryes.vue';
+import DownloadSound from './components/Download-sound/Download-sound.vue';
+import ExperiencesFromCustomers from './components/experiences-from-customers/experiences-from-customers.vue';
+import Footer from './components/footer/footer.vue';
 import HeaderBody from './components/header/header-body/header-body.vue';
 import MusicPlayer from './components/MusicPlayer/MusicPlayer.vue';
 import ProductonHous from './components/ProductonHouse/ProductonHous.vue';
@@ -10,7 +13,10 @@ export default {
   ProductonHous,
   MusicPlayer,
   BrouseByCategoryes,
-  WhyUs
+  WhyUs,
+  DownloadSound,
+  ExperiencesFromCustomers,
+  Footer
   },
   methods: {
     playMusic() {
@@ -35,7 +41,9 @@ export default {
 <MusicPlayer></MusicPlayer>
 <BrouseByCategoryes></BrouseByCategoryes>
 <WhyUs></WhyUs>
-
+<DownloadSound></DownloadSound>
+<ExperiencesFromCustomers></ExperiencesFromCustomers>
+<Footer></Footer>
 </template>
 
 
