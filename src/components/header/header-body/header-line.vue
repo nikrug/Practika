@@ -70,7 +70,9 @@ function closeLoginModal() {
 
     document.body.appendChild(s);
   },
+
 };
+
 </script>
 
 <template>
@@ -126,7 +128,7 @@ function closeLoginModal() {
   </div>
 </div>
 
-  </nav>
+</nav>
   
   <div class="dropdown">
   <button class="dropbtn" onclick="toggleDropdown()"><img src="/src/assets/header-img/Frame 81.svg" ></button>
@@ -148,27 +150,27 @@ function closeLoginModal() {
 
 <div id="loginModal" class="modal">
   <div class="login-form">
-    <button class="close"name="leaf" onclick="closeLoginModal()" value="1" style="margin-left: 360px;margin-top: 30px;"><img src="/src\assets\LogIn\Frame 82.svg"></button>
+    <button class="close"name="leaf" onclick="closeLoginModal()" value="1" ><img src="/src\assets\LogIn\Frame 82.svg"></button>
     <p class="text-dezine-small-grey"style="font-weight: 600; font-size: 28px;color: #020D37;margin-top: -20px;">Login</p>
     <a href="#logo" class="" style="margin-top: -20px;" >
       <img style="margin-right: 20px;" src="/src\assets\LogIn\google.svg" ><img style="" src="/src\assets\LogIn\facebook.svg" ><img style="margin-left: 18px;" src="/src\assets\LogIn\twitter.svg" >
     </a>
     <p class="text-dezine-small-grey">or use your email</p>
-    <p class="text-dezine-small-grey" style="margin-left: -350px; color:#4C526A;">Email</p>
-    <form style="margin-top: -10px; width: 400px;height: 50px;">
+    <p class="text-dezine-small-grey-login" >Email</p>
+    <form class="email-form" >
     <input class="email-password-container"placeholder="Email">
     </form>
-    <p class="text-dezine-small-grey" style="margin-left: -320px; color:#4C526A;">Password</p>
-    <form style="margin-top: -10px; width: 400px;height: 50px;border-radius: 8px; border:0px;">
+    <p class="text-dezine-small-grey-password" >Password</p>
+    <form class="email-form" >
     <input class="email-password-container"placeholder="Password" >
     </form>
-    <p class="text-dezine-small-grey"style="margin-left: -130px;margin-top: 5px;">
+    <p class="text-dezine-small-grey-label-style">
       <label style="margin-left: -130px;margin-top: 5px;">
         <input type="checkbox" name="subscribe">
       </label>
       Remember Me
     </p>
-    <button style="width: 400px;height: 52px;background-color:#0432DF;border-radius:8px; border:2px solid #FFFFFF;margin-top: 50px;">
+    <button class="login-button">
       <p class="text-dezine-small-grey"style="font-weight: 600;color:white;">Login</p>
     </button> 
     <p class="text-dezine-small-grey"style="color: #0432DF;font-weight: 600;">or Sing Up</p>

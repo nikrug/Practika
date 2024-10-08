@@ -1,0 +1,68 @@
+.ProductionBody{
+display:flex;
+width: 100%;
+height: 237px;
+text-align: center;
+justify-content: center;
+border: 1px solid red;
+flex-direction: column;
+align-items: center;
+background-color: #FAFAFA;
+;
+}
+
+.ProductionBody__pictiourCase{
+  width: 1035px;
+  height: 62px;
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  border: 1px solid green;
+  display: flex;
+  gap:80px;
+}
+
+.HouseTitleText{
+font-family:'Poppins', sans-serif;
+font-size: 20px;
+font-weight: 600;
+color: #020D37;
+order:-1;
+margin-top: -10px;
+}
+
+
+
+
+@media(max-width:600px){
+    .ProductionBody__pictiourCase{
+        width: 280px;
+        height: 119px;
+        margin-top: 10px;
+        border: 1px solid green;
+        display: flex;
+        gap:30px;
+        flex-flow: row wrap;
+        justify-content: space-around;
+      }
+    .TitleText{
+        font-size: 1px;
+        }
+    .SizeImg{
+            height: 40px;
+            width: 40px;
+        }
+    .SizeImgLine{
+            height: 20px;
+            width: 70px;
+        }
+        .SizeImgPicky{
+            height: 40px;
+            width: 40px;
+            margin-top: -10px;
+        }
+
+}
+
+

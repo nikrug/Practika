@@ -61,3 +61,50 @@ function closeLoginModal() {
   document.getElementById('loginModal').style.display = 'none';
   enableScroll(); 
 }
+document.getElementById("myButton").addEventListener("click", function() {
+  document.body.classList.add("modal-open");
+  document.getElementById("myModal").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
+});
+
+function closeModal() {
+  document.body.classList.remove("modal-open");
+  document.getElementById("myModal").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+}
+const popupOverlay = document.getElementById("popup-overlay");
+const popup = document.getElementById("popup");
+ 
+function showPopup() {
+  popupOverlay.style.display = "block";
+}
+ 
+function hidePopup() {
+  popupOverlay.style.display = "none";
+}
+ 
+popupOverlay.addEventListener("click", hidePopup);
+popup.addEventListener("click", (event) => {
+  event.stopPropagation();
+});
+var closeButton = document.getElementById("closeButton");
+closeButton.addEventListener("click", function() {
+  popup.classList.remove("show");
+});
+
+popup.addEventListener("click", function(event) {
+  event.stopPropagation();
+});
+
+
+function togglePopup() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+var closeButton = document.getElementById("closeButton");
+closeButton.addEventListener("click", function(event) {
+  event.stopPropagation();
+  var popup = document.getElementById("myPopup");
+  popup.classList.remove("show");
+});

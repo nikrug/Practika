@@ -79,6 +79,8 @@
   .close {
         background: none;
         border: none;
+        margin-left: 360px;
+        margin-top: 30px;
   }
 
   .login-form{
@@ -105,6 +107,19 @@
     color: #4C526A;
     width: 400px;
     height: 50px;
+  }
+  .email-form{
+    margin-top: -10px;
+    width: 400px;
+    height: 50px;
+  }
+  .login-button{
+    width: 400px;
+    height: 52px;
+    background-color:#0432DF;
+    border-radius:8px; 
+    border:2px solid #FFFFFF;
+    margin-top: 50px;
   }
   //DROPDOUWN SYTLE
  // Style the button 
@@ -141,11 +156,34 @@
   padding: 20px; 
   box-sizing: border-box; 
 }
+
 //ТЕ
   $text-font:"Poppins", sans-serif;
-  .text-dezine-small-grey{
-    color: grey; size: 16px; font-weight: 500;font-family: $text-font;
+  .text-dezine-small-grey-login{
+    color: grey;
+    size: 16px;
+    font-weight: 500;
+    font-family: $text-font;
+    margin-left: -350px;
+    
  }
+ .text-dezine-small-grey-password{
+  color: grey;
+  size: 16px;
+  font-weight: 500;
+  font-family: $text-font;
+  margin-left: -320px;
+}
+ .text-dezine-small-grey{
+  color: grey; size: 16px; font-weight: 500;font-family: $text-font;
+}
+.text-dezine-small-grey-label-style{
+  margin-left: -130px;
+  margin-top: 5px;
+  color: grey; size: 16px; 
+  font-weight: 500;
+  font-family: $text-font;
+}
   
   @media(max-width: 610px)
   {
@@ -168,7 +206,6 @@
       display: block;
       }
       .login-form{
-        
         height: 100%;
         width: 100%;
         background-color: #ffffff;
@@ -182,6 +219,43 @@
         flex-direction: column;
         align-items: center;
       }
+      .email-form{
+        margin-top: -10px;
+        width: 288px;
+        height: 50px;
+      }
+      .text-dezine-small-grey-login{
+        color: grey; size: 16px;
+        font-weight: 500;
+        font-family: $text-font;
+        margin-left: -240px;
+         color:#4C526A;
+     }
+     .text-dezine-small-grey-password{
+      color: grey;
+      size: 16px;
+      font-weight: 500;
+      font-family: $text-font;
+      margin-left: -210px;
+    }
+     .login-button{
+      width: 288px;
+      height: 52px;
+      background-color:#0432DF;
+      border-radius:8px; 
+      border:2px solid #FFFFFF;
+      margin-top: 50px;
+    }
+    .close {
+      background: none;
+      border: none;
+      margin-left: 260px;
+      margin-top: 30px;
+}
+.text-dezine-small-grey-label-style{
+  margin-left: -30px;
+  margin-top: 5px;
+}
 
    }
 
