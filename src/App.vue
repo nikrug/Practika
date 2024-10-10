@@ -18,18 +18,11 @@ export default {
   ExperiencesFromCustomers,
   Footer
   },
-  methods: {
-    playMusic() {
-      
-      audio.play();
-    }
-  } 
 }
 </script>
 
 <style>
     a {
-        
         color: inherit; 
     }
 </style>

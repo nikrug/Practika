@@ -2,11 +2,18 @@
 import MusicPlayerContent from './MusicPlayerContent.vue';
 import * as noUiSlider from 'nouislider';
 import 'nouislider/dist/nouislider.css';
-import { vModelCheckbox } from 'vue';
 export default {
+  components:{
+    MusicPlayerContent
+},
   data() {
     return {
-      formattedValues: ''
+      formattedValues: '',
+      fillColor: 'none',
+        strokeColor: '#4C526A',
+        isColorChanged: false,
+        audio: new Audio('/src/Pictures/Daisuke.mp3'),
+        isPlaying: false
     };
   },
   mounted() {
@@ -56,39 +63,13 @@ function closePopup(popupId) {
   popup.classList.remove("show");
 }
 
-popup.addEventListener("click", function(event) {
-  event.stopPropagation(); 
-});
-
-document.addEventListener("click", function() {
-  popup.classList.remove("show");
-}); 
-var slider = document.getElementById('slider');
-
-noUiSlider.create(slider, {
-    start: [20, 80],
-    connect: true,
-    range: {
-        'min': 0,
-        'max': 100
-    }
-});
-  
-
       `;
 
     document.body.appendChild(s);
-    this.initializeSlider();
 
 
   
   },
-
-
-
-components:{
-    MusicPlayerContent
-}
 
 
 
@@ -98,7 +79,7 @@ components:{
 <template>
 <div class="MusicPlayerBody">
     <div class="MusicPlayerBody__TitleBox">
-        <h class="TitleTextPlayer">Best sound effects for youtube videos</h>
+        <div class="TitleTextPlayer">Best sound effects for youtube videos</div>
     </div>
 
     <div class="МusicPlayerBody__TabBox">
@@ -156,22 +137,18 @@ components:{
 
 <!--Музыка для табов(сократить)-->
     <div class="tab-content" id="content-1">
-<MusicPlayerContent></MusicPlayerContent>
-<MusicPlayerContent></MusicPlayerContent>
-<MusicPlayerContent></MusicPlayerContent>
-<MusicPlayerContent></MusicPlayerContent>
+      <MusicPlayerContent></MusicPlayerContent>
+      <MusicPlayerContent></MusicPlayerContent>
+      <MusicPlayerContent></MusicPlayerContent>
     </div>    
-<div class="tab-content" id="content-2">
-        <MusicPlayerContent></MusicPlayerContent>
-        <MusicPlayerContent></MusicPlayerContent>
-        <MusicPlayerContent></MusicPlayerContent>
+    <div class="tab-content" id="content-2">
+      <MusicPlayerContent></MusicPlayerContent>
     </div>
     <div class="tab-content" id="content-3">
-        <MusicPlayerContent></MusicPlayerContent>
-        <MusicPlayerContent></MusicPlayerContent>
+      <MusicPlayerContent></MusicPlayerContent>
     </div>
     <div class="tab-content" id="content-4">
-        <MusicPlayerContent></MusicPlayerContent>
+      <MusicPlayerContent></MusicPlayerContent>
   </div>
     </div>
 
