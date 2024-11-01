@@ -1,5 +1,11 @@
+body { 
+    margin: 0;
+  
+  }
+  * {box-sizing: border-box;}
 .body{
     order:9;
+    margin: 0;
     flex-direction: column;
     display: flex;
     max-width:100%;

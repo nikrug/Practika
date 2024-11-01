@@ -2,7 +2,7 @@ $text-font:"Poppins", sans-serif;
 .why-us-body{
     display: flex;
     width: 100%;
-    height: 532px;
+    
     padding: 60px 100px 100px 100px;
     gap: 105px;
     opacity: 0px;
@@ -21,11 +21,11 @@ $text-font:"Poppins", sans-serif;
 
 .Title__text-block{
 width: 337px;
-height: 166px;
+
 outline: 2px solid rgb(117, 255, 36);
 }
 
-.inner-block {
+.why-us-body__features__inner-block {
     position: absolute;
     width: 246px;
     height: 159px;
@@ -65,6 +65,29 @@ outline: 2px solid rgb(117, 255, 36);
   .text-dezine-text-box-Title-why-us{
     color: #020D37; font-size: 27px; font-weight: 600;font-family: $text-font;line-height: 45px;
   }
+  @media(max-width:1100px){
+    .why-us-body{
+        display: flex;
+        width: 100%;
+        height: 952px;
+        outline: 2px solid rgb(117, 255, 36);
+        flex-direction: column;
+        top: 2157.6px;
+        left: 1px;
+        align-items: center;
+    }
+    .why-us-body__features{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      outline: 2px solid rgb(117, 255, 36);
+      margin-top:-60px;
+      margin-left:0px;                
+  }
+
+    
+  } 
   @media(max-width:700px){
     .why-us-body{
         display: flex;
@@ -95,7 +118,7 @@ outline: 2px solid rgb(117, 255, 36);
         text-align: center;
         
         }
-    .inner-block {
+    .why-us-body__features__inner-block  {
         position: relative;
         width: 246px;
         height: 150px;

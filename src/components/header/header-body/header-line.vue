@@ -108,11 +108,11 @@ function closeLoginModal() {
     <p class="text-dezine-small-grey">or use your email</p>
     <p class="text-dezine-small-grey" style="margin-left: -350px; color:#4C526A;">Email</p>
     <form style="margin-top: -10px; width: 400px;height: 50px;">
-    <input class="email-password-container"placeholder="Email">
+    <input class="email-password-container" id="email" type="text" autocomplete="given-name" placeholder="Email">
     </form>
     <p class="text-dezine-small-grey" style="margin-left: -320px; color:#4C526A;">Password</p>
     <form style="margin-top: -10px; width: 400px;height: 50px;border-radius: 8px; border:0px;">
-    <input class="email-password-container"placeholder="Password" >
+    <input class="email-password-container" id="password" placeholder="Password" >
     </form>
     <p class="text-dezine-small-grey"style="margin-left: -130px;margin-top: 5px;">
       <label style="margin-left: -130px;margin-top: 5px;">
@@ -131,7 +131,7 @@ function closeLoginModal() {
 </nav>
   
   <div class="dropdown">
-  <button class="dropbtn" onclick="toggleDropdown()"><img src="/src/assets/header-img/Frame 81.svg" ></button>
+  <button class="dropbtn" onclick="MyDropdown()"><img src="/src/assets/header-img/Frame 81.svg" ></button>
   <div class="dropdown-content" id="myDropdown">
     <div class="text-dezine-small-grey" style="background: #030B26;">
       <p>Home</p>
@@ -158,11 +158,11 @@ function closeLoginModal() {
     <p class="text-dezine-small-grey">or use your email</p>
     <p class="text-dezine-small-grey-login" >Email</p>
     <form class="email-form" >
-    <input class="email-password-container"placeholder="Email">
+    <input class="email-password-container" id="email" type="text" autocomplete="given-name" placeholder="Email">
     </form>
     <p class="text-dezine-small-grey-password" >Password</p>
     <form class="email-form" >
-    <input class="email-password-container"placeholder="Password" >
+    <input class="email-password-container" id="password" type="text" autocomplete="given-name" placeholder="Password" >
     </form>
     <p class="text-dezine-small-grey-label-style">
       <label style="margin-left: -130px;margin-top: 5px;">

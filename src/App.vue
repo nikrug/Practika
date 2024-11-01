@@ -31,7 +31,7 @@ export default {
 
 <HeaderBody></HeaderBody>
 <ProductonHous></ProductonHous>
-<MusicPlayer></MusicPlayer>
+
 <BrouseByCategoryes></BrouseByCategoryes>
 <WhyUs></WhyUs>
 <DownloadSound></DownloadSound>

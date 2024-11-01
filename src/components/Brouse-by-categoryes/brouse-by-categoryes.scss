@@ -1,14 +1,12 @@
 .brouse-by-categoryes-body{
-    display: flex;
-    width:100%;
-    height: 482px;
+    display: flex; 
     flex-direction: column;
     padding: 60px 101px 60px 101px;
     outline: 2px solid rgb(0, 0, 0);
 }
 .brouse-by-categoryes-img-container{
     width: 100%;
-    height: 294px;
+    
     outline: 2px solid rgb(0, 0, 0);
     justify-content: space-around;
     padding-left: 10px;
@@ -39,7 +37,7 @@ letter-spacing: -0.02em;
     .brouse-by-categoryes-img-container{
         width: 100%;
         height: 510px;
-        border: 2px solid red;
+        outline: 2px solid red;
         padding-left: 10px;
         padding-top: 10px;
 
@@ -54,7 +52,7 @@ letter-spacing: -0.02em;
         height: 682px;
         flex-direction: column;
         padding: 30px 16px 40px 20px;
-        border: 2px solid red;
+        outline: 2px solid red;
     }
     .brouse-size-img{
         height:70px ;

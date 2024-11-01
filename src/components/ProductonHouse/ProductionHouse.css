@@ -1,0 +1,78 @@
+.ProductionBody {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid red;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FAFAFA;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.ProductionBody__pictiourCase {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  border: 1px solid green;
+  display: flex;
+  gap: calc(5px + 75 * (100vw - 320px) / 1600);
+}
+
+.HouseTitleText {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #020D37;
+  order: -1;
+  margin-top: -10px;
+}
+
+@media (max-width: 750px) {
+  .TitleText {
+    font-size: 1px;
+  }
+  .SizeImg {
+    height: 40px;
+    width: 40px;
+  }
+  .SizeImgLine {
+    height: 20px;
+    width: 70px;
+  }
+  .SizeImgPicky {
+    height: 40px;
+    width: 40px;
+    margin-top: -10px;
+  }
+}
+@media (max-width: 600px) {
+  .ProductionBody__pictiourCase {
+    width: 280px;
+    height: 119px;
+    margin-top: 10px;
+    border: 1px solid green;
+    display: flex;
+    gap: 30px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .TitleText {
+    font-size: 1px;
+  }
+  .SizeImg {
+    height: 40px;
+    width: 40px;
+  }
+  .SizeImgLine {
+    height: 20px;
+    width: 70px;
+  }
+  .SizeImgPicky {
+    height: 40px;
+    width: 40px;
+    margin-top: -10px;
+  }
+}/*# sourceMappingURL=ProductionHouse.css.map */

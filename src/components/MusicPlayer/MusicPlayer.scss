@@ -2,7 +2,6 @@ $text-font:"Poppins", sans-serif;
 
 .MusicPlayerBody {
     width: 100%;
-    height: 717px;
     border: 2px solid red;
     display: flex;
     flex-direction: column;
@@ -50,7 +49,7 @@ $text-font:"Poppins", sans-serif;
 }
 
 .audio-column {
-  width: 1300px;
+  
   display: flex;
   flex-direction: column;
   border: 2px solid red;
@@ -59,11 +58,12 @@ $text-font:"Poppins", sans-serif;
 .audio-player {
   display: flex;
   align-items: center;
-  gap:150px;
+  flex: 1 0 calc(50% - 10px); /* 50% ширины с вычетом промежутка */
+  gap: calc(5px + (150 - 5) * ((100vw - 320px) / (1920 - 320)));
   font-weight:500 ;
   font-family:"Poppins", sans-serif ;
   font-size: 16px;
-border-bottom: 1px solid gray;
+  border-bottom: 1px solid gray;
   
 }
 
@@ -154,7 +154,7 @@ border-bottom: 1px solid gray;
 .images-container
 {
   display: flex;
-  margin-left: 200px;
+  margin-left: auto;
   gap:20px;
 }
 .filter-button{
@@ -164,6 +164,9 @@ border-bottom: 1px solid gray;
 }
 .filter-button-mobile{
   display: none;
+}
+.filter-button-tablet{
+display: none;
 }
 .music-link-text{
   font-size: 16px;
@@ -238,7 +241,43 @@ border-bottom: 1px solid gray;
   margin-top: 40px;
   cursor: pointer;
 }
-@media(max-width:700px){
+@media(max-width:980px){
+  .filter-button-tablet{
+    display: block;
+    }
+  .filter-button{
+    display: none;
+  }
+  .tab {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .tab > label {
+    padding-top: 0.5rem;
+    cursor: pointer;
+    transition: color .15s ease-in-out, border-color .15s ease-in-out;
+    color: #4C526A;
+    background: 0 0;
+    cursor: pointer; 
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid red;
+  }
+  .audio-info-mobile-tablet{
+    display: none;
+    margin-right: 20%;
+   }
+   .popup .popuptext {
+    margin-top: -50px;
+    margin-left: -255px;
+    
+}
+}
+@media(max-width:730px){
     .MusicPlayerBody{
         width: 100%;
         height: 626px;
@@ -247,6 +286,11 @@ border-bottom: 1px solid gray;
         opacity: 0px;
 
     }
+    .popup .popuptext {
+      margin-top: 0px;
+      margin-left: -240px;
+      
+  }
     .MusicPlayerBody__TitleBox{
         width: 100%;
         height: 60px;
@@ -264,18 +308,38 @@ border-bottom: 1px solid gray;
      display: none;
      margin-right: 20%;
     }
+    .audio-info-mobile-tablet-tab{
+      margin-right: auto;
+    }
     .tab {
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
     }
+    .tab > label {
+      padding-top: 0.5rem;
+      cursor: pointer;
+      transition: color .15s ease-in-out, border-color .15s ease-in-out;
+      color: #4C526A;
+      background: 0 0;
+      cursor: pointer; 
+      font-size: 14px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      border: 2px solid red;
+    }
     .filter-button-mobile{
       display: block;
-      margin-left: 15px;
+      
     }
     .filter-button{
       display: none;
     }
+    .filter-button-tablet{
+      display: none;
+      }
     .audio-player {
       display: flex;
       align-items: center;
@@ -287,7 +351,7 @@ border-bottom: 1px solid gray;
     .images-container
     {
       display: flex;
-      margin-left: 20px;
+      margin-left: auto;
       gap:10px;
     }
     .TitleTextPlayer {

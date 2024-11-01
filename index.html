@@ -3,32 +3,83 @@
   
   <head>
 
+
+    <script type="module" src="/src\components\header\header-body\header.js"></script>
+    <link rel="import" href="brouse-by-category.html"> 
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <linkrel="stylesheet" href="index.css">
+    <linkrel="stylesheet" href="index.css"></linkrel>
+    <link rel="stylesheet" type="text/css" href="/src\reset.css">
+    <link href="/src\components\MusicPlayer\nouislider.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/src/components/header/header-body/header-line.css">
+    <link rel="stylesheet" type="text/css" href="/src\components\header\header-body\header-body.css">
+    <link rel="stylesheet" type="text/css" href="/src\components\header\search-line\search-line.css">
+    <link rel="stylesheet" type="text/css" href="/src\components\ProductonHouse\ProductionHouse.css">
+    <link rel="stylesheet" type="text/css" href="/src\components\Brouse-by-categoryes\brouse-by-categoryes.css">
+    <link rel="stylesheet" type="text/css" href="/src\components\MusicPlayer\MusicPlayer.css">
+    <link rel="stylesheet" type="text/css" href="/src\components\why-us\why-us.css">
+    <link rel="stylesheet" type="text/css" href="/src\components\Download-sound\Download-sound.css">
+    <link rel="stylesheet" type="text/css" href="/src\components\experiences-from-customers\experiences-from-customers.css">
+    <link rel="stylesheet" type="text/css" href="/src\components\footer\footer.css">
+
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WavesCo</title>
+    <script  src="/src/components/header/header-body/header.js"></script>
+
+
+    <style>
+
+body{
+  margin:0;
+}
+
+    </style>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
       </style>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts">
-      const sass = require('sass');
 
-const result = sass.renderSync({
-  silenceDeprecations: ['legacy-js-api'],
+    <div id="header-body"></div>
+    <div id="MusicPlayer"></div>
+    <div id="ProductionHouse"></div>
+    <div id="brouse-by-category"></div>
+    <div id="why-us"></div>
+    <div id="Douwnload-sound"></div>
+    <div id="experiences-from-customers"></div>
+    <div id="footer"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
+    <script src="/src/components/header/header-body/header.js"></script>
+    <script src="/src/components/MusicPlayer/MusicPlayer.js"></script>
+    <script>
 
-});
+      </script>
+    <script>
+function fetchData(url, targetId) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(targetId).innerHTML = data;
+        });
+}
+
+fetchData('/src/components/Brouse-by-categoryes/brouse-by-category.html', 'brouse-by-category');
+fetchData('/src/components/header/header-body/header-body.html', 'header-body');
+fetchData('/src/components/header/header-body/header-line.html', 'header-line');
+fetchData('/src/components/header/search-line/search-line.html', 'search-line');
+fetchData('/src/components/ProductonHouse/ProductionHouse.html', 'ProductionHouse');
+fetchData('/src/components/MusicPlayer/MusicPlayer.html', 'MusicPlayer');
+fetchData('/src/components/MusicPlayer/MusicPlayerContent.html', 'MusicPlayerContent');
+fetchData('/src/components/why-us/why-us.html', 'why-us');
+fetchData('/src/components/Download-sound/Douwnload-sound.html', 'Douwnload-sound');
+fetchData('/src/components/experiences-from-customers/experiences-from-customers.html', 'experiences-from-customers');
+fetchData('/src/components/footer/footer.html', 'footer');
     </script>
-
   </body>
 </html>

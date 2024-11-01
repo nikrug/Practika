@@ -1,0 +1,460 @@
+.header-line {
+  display: flex;
+  order: 1;
+  font-family: "Poppins", sans-serif;
+  /* Dropdown container */
+  /* Dropdown content (hidden by default) */
+}
+
+.header-line body {
+  display: flex;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+
+.header-line header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 10px 100px 20px 100px;
+  border-bottom: 2px solid rgba(46, 46, 46, 0.7);
+}
+
+.header-line .wrap-logo {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.header-line header a {
+  color: #6b6464;
+  padding: 1dvh;
+  text-decoration: none;
+  font-size: calc(10px + 0.5vw);
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.header-line header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.header-line header a:hover {
+  color: #ffffff;
+}
+
+.header-line header a.active {
+  background-color: #1100ff;
+  color: #ffffff;
+  padding: 12px 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-line nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-line .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header-line .close {
+  background: none;
+  border: none;
+  margin: 30px 0 0 360px;
+}
+
+.header-line .close-dropdown {
+  background: none;
+  border: none;
+  margin:0 0 0 calc(110px + 600 * (100vw - 320px) / 600);
+}
+
+.header-line .dropdown-header {
+  align-content: row;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  height: 100px;
+  padding-top: 20px;
+}
+
+.header-line .login-form {
+  height: 691px;
+  width: 480px;
+  background-color: #ffffff;
+  border: 2px solid red;
+  border-radius: 24px;
+  display: flex;
+  vertical-align: middle;
+  margin: 100px auto 0 auto;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-line .email-password-container {
+  background-color: #EEEEEE;
+  border-radius: 8px;
+  border: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #4C526A;
+  width: 400px;
+  height: 50px;
+}
+
+.header-line .email-form {
+  margin:  0 0px 0;
+  width: 400px;
+  height: 50px;
+}
+
+.header-line .login-button {
+  width: 400px;
+  height: 52px;
+  background-color: #0432DF;
+  border-radius: 8px;
+  border: 2px solid #FFFFFF;
+  margin: 50px 0 15px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-line .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: transparent;
+}
+
+.header-line .dropdown {
+  position: relative;
+  text-align: left;
+  align-items: left;
+  display: none;
+  
+}
+
+.header-line .dropdown-content {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #030B26;
+  z-index: 10000;
+  
+  box-sizing: border-box;
+}
+
+.header-line .text-dezine-small-grey-login {
+  color: grey;
+  size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin:0 0 0 -350px;
+}
+
+.header-line .text-dezine-small-grey-password {
+  color: grey;
+  size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin:0 0 0 -320px;
+}
+
+.header-line .text-dezine-small-grey {
+  color: grey;
+  size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-line .text-dezine-small-grey-label-style {
+
+  color: grey;
+  size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.open-modal-button{
+  background-color: #1100ff;
+  color: #ffffff;
+  height: 48px;
+  width: 87px;
+  border: 0px;
+  border-radius: 8px;
+
+}
+.dropdown-open-modal-button{
+  background-color: #1100ff;
+  color: #ffffff;
+  height: 48px;
+  width: 87px;
+  border: 0px;
+  border-radius: 8px;
+  margin: 0 0 40px 20px;
+}
+
+.text-white{
+  color:white;
+}
+
+.text-blue{
+  color:#0432DF;
+  margin:20px 0;
+}
+
+.weight-600{
+  font-weight: 600;
+}
+
+.weight-500{
+  font-weight: 500;
+}
+
+.size-16{
+  font-size: 16px;
+}
+
+.size-14{
+  font-size: 14px;
+}
+.white-gray{
+  color: #ACAFB8;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin:10px 0 10px ;
+}
+.login-text{
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.black-gray{
+  color: #4C526A;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin:30px 300px 10px 0
+}
+
+.label-login{
+  text-align: left;
+  width: 83%;
+}
+.label-login-checkbox{
+  text-align: left;
+  width:400px;
+  margin:20px 0;
+}
+.margin-icon-left
+{
+margin: 10px  25px 0;
+}
+.title-text-login{
+  font-weight: 600;
+  font-size: 28px;
+  color: #020D37;
+  margin: -30px 0 5px 0;
+}
+.img-logo{
+
+margin-left: 20px;
+}
+.dropdown-white-gray{
+  color: #ACAFB8;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin:10px 20px 10px;
+  line-height: 40px;
+}
+@media (max-width: 880px) {
+  .header-line .modal {
+    display: none;
+    z-index: 1000000;
+    margin-bottom: 200px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #030B26;
+  }
+
+  .header-line .dropdown-content {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    background-color: #030B26;
+    z-index: 10000;
+    transition: height 0.3s ease;
+
+  }
+  .dropdown-site-background{
+    background: #0432DF;
+  }
+  .header-line header a {
+    font-size: 0;
+  }
+  .header-line nav {
+    font-size: 10px;
+    background-color: #030B26;
+  }
+
+  .header-line header {
+    padding: 20px 20px 1px 20px;
+    background-color: #030B26;
+  }
+
+  .header-line nav {
+    display: none;
+  }
+
+  .header-line .dropdown {
+    display: block;
+    
+  }
+
+}
+
+@media (max-width: 610px) {
+  .header-line .email-password-container {
+    background-color: #EEEEEE;
+    border-radius: 8px;
+    border: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #4C526A;
+    width: 288px;
+    height: 50px;
+    margin:10px 0 0 -20px;
+  }
+  .label-login{
+    text-align: left;
+    width:280px;
+  }
+  .label-login-checkbox{
+    text-align: left;
+    width: 230px;
+  }
+  .header-line .dropdown-content {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #030B26;
+    box-sizing: border-box;
+    z-index: 10000;
+    transition: height 0.3s ease;
+    /* Добавляем плавный переход для высоты */
+  }
+
+  .header-line header a {
+    font-size: 0;
+  }
+
+  .header-line nav {
+    font-size: 10px;
+    background-color: #030B26;
+  }
+
+  .header-line header {
+    padding: 20px 20px 1px 20px;
+    background-color: #030B26;
+  }
+
+  .header-line nav {
+    display: none;
+  }
+
+  .header-line .dropdown {
+    display: block;
+  }
+
+  .header-line .login-form {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border: 2px solid red;
+    border-radius: 0px;
+    display: flex;
+    vertical-align: middle;
+    margin: 0 auto 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-line .email-form {
+   
+    width: 250px;
+    height: 50px;
+  }
+
+  .header-line .text-dezine-small-grey-login {
+    color: grey;
+    size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-left: -240px;
+    color: #4C526A;
+  }
+
+  .header-line .text-dezine-small-grey-password {
+    color: grey;
+    size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin:0 0 0 -210px;
+  }
+
+  .header-line .login-button {
+    width: 288px;
+    height: 52px;
+    background-color: #0432DF;
+    border-radius: 8px;
+    border: 2px solid #FFFFFF;
+    margin: 50px 0 15px 0;
+  }
+
+  .header-line .close {
+    background: none;
+    border: none;
+    margin:0 260px;
+    margin: 30px 0 0 260px;
+  }
+
+  .header-line .text-dezine-small-grey-label-style {
+    margin-left: -30px;
+    margin-top: 5px;
+  }
+}
+
+/*# sourceMappingURL=header-line.css.map */

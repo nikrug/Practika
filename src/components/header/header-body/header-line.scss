@@ -184,7 +184,15 @@
   font-weight: 500;
   font-family: $text-font;
 }
-  
+
+.open-modal-button{
+  background-color: #1100ff;
+  color: #ffffff;
+  height: 48px;
+  width: 87px;
+  border: 0px;
+  border-radius: 8px;
+}
   @media(max-width: 610px)
   {
    header a{

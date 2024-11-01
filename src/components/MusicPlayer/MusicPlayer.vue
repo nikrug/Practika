@@ -17,7 +17,7 @@ export default {
     };
   },
   mounted() {
-    var slider = this.$refs.slider;
+  var slider = this.$refs.slider;
 
 noUiSlider.create(slider, {
   start: [1 * 60, 2.3 * 60],
@@ -91,7 +91,7 @@ function closePopup(popupId) {
     <input id="tab-btn-2" name="tab-btn" type="radio" value="">
     <label for="tab-btn-2">Jumpscare</label>
     <input id="tab-btn-3" name="tab-btn" type="radio" value="">
-    <label for="tab-btn-3">Mellow</label>
+    <label class="audio-info-mobile-tablet-tab" for="tab-btn-3">Mellow</label>
     <input id="tab-btn-4" name="tab-btn" type="radio" value="">
     <label class="audio-info-mobile" for="tab-btn-4">Happiness</label>
     <input id="tab-btn-5" name="tab-btn" type="radio" value="">
@@ -103,10 +103,11 @@ function closePopup(popupId) {
 
     <div class="popup">
   <button class="filter-button" onclick="togglePopup('popup1')"><img src="/src/assets/Music-img/Frame 28.svg"></button>
+  <button class="filter-button-tablet" onclick="togglePopup('popup1')"><img src="/src\assets\Music-img\Frame 28 (3).svg"></button>
   <span class="popuptext" id="popup1">
     <p class="text-dezine-small-grey" style="position: absolute;padding-left:15px;">Filter</p>
     <p class="text-dezine-small-grey"style="position: absolute;padding-left:15px;padding-top: 50px;">Duration</p>
-    <div ref="slider"id="slider-round"class="slider-styled" style="top:" ></div>
+    <div ref="slider" id="slider-round" class="slider-styled" style="top:" ></div>
     
     <img class="closeButton" onclick="closePopup('popup1')" src="/src\assets\Music-img\Frame 82 (1).svg">
     <button class="all-category"><p class="text-dezine-small-grey" style="color:blue; margin-top:11px;" >All categores</p></button>

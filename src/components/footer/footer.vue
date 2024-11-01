@@ -8,8 +8,8 @@ export default {
 <template>
   <div class="container-footer">
 
-<div class="blocks-footer">
-<div style="width: 298px;height: 137px;"  class="block-footer">
+<div class="container-footer__blocks-footer">
+<div style="width: 298px;height: 137px;"  class="container-footer__blocks-footer__block-footer">
   <img style="margin-left: auto;" src="\src\Logo\WavesCo.svg">
   <div class="Caption2-Reguler">
     <p>WavesCo is a platform for providing premium sound effects for Youtube videos, movies and many more.</p>
@@ -18,7 +18,7 @@ export default {
     <p>WavesCo ©2021, All rights reserved</p>
   </div>
 </div>
-<div class="mobile-block-container" >
+<div class="container-footer__blocks-footer__mobile-block-container" >
   <div  class="block-footer-mobile" >
     <div style="color:#EEEEEE;size:18px;font-weight: 600;" class="Caption2-Reguler">
       Product
@@ -30,7 +30,7 @@ export default {
     <p>Affiliate</p>
   </div>
   </div>
-  <div  class="block-footer">
+  <div  class="container-footer__blocks-footer__block-footer">
     <div style="color:#EEEEEE;size:18px;font-weight: 600;" class="Caption2-Reguler">
       Company
   </div>
@@ -42,7 +42,7 @@ export default {
   </div>
   </div>
 </div>
-  <div  class="block-footer">
+  <div  class="container-footer__blocks-footer__block-footer">
     <div style="color:#EEEEEE;size:18px;font-weight: 600;" class="Caption2-Reguler">
       Social Media
   </div>

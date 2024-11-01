@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="MusicPlayer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.2/nouislider.css" />
+</head>
+
+<body>
+
+  <div class="MusicPlayerBody">
+    <div class="MusicPlayerBody__TitleBox">
+      <div class="TitleTextPlayer">Best sound effects for youtube videos</div>
+    </div>
+
+    <div class="МusicPlayerBody__TabBox">
+
+      <div class="container">
+        <div class="tab">
+          <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
+          <label for="tab-btn-1">All</label>
+          <input id="tab-btn-2" name="tab-btn" type="radio" value="">
+          <label for="tab-btn-2">Jumpscare</label>
+          <input id="tab-btn-3" name="tab-btn" type="radio" value="">
+          <label class="audio-info-mobile-tablet-tab" for="tab-btn-3">Mellow</label>
+          <input id="tab-btn-4" name="tab-btn" type="radio" value="">
+          <label class="audio-info-mobile" for="tab-btn-4">Happiness</label>
+          <input id="tab-btn-5" name="tab-btn" type="radio" value="">
+          <label class="audio-info-mobile" for="tab-btn-5">Ambience</label>
+          <input class="audio-info-mobile" id="tab-btn-6" name="tab-btn" type="radio" value="">
+          <label class="audio-info-mobile" style="margin-right: auto;" for="tab-btn-6">Zonk</label>
+
+
+
+          <div class="popup">
+            <button class="filter-button" onclick="togglePopup('popup1')"><img
+                src="/src/assets/Music-img/Frame 28.svg"></button>
+            <button class="filter-button-tablet" onclick="togglePopup('popup1')"><img
+                src="/src\assets\Music-img\Frame 28 (3).svg"></button>
+            <span class="popuptext" id="popup1">
+              <p class="text-dezine-small-grey">Filter</p>
+              <p class="text-dezine-small-grey">Duration</p>
+              <img class="closeButton" onclick="closePopup('popup1')" src="/src\assets\Music-img\Frame 82 (1).svg">
+              <div class="slider-styled" id="invert-connects"></div>
+              <button class="all-category">
+                <p class="text-dezine-small-grey">All categores</p>
+              </button>
+              <p class="text-dezine-small-grey">
+                <label>
+                  <input type="checkbox" name="subscribe">
+                </label>
+                Only free sounds
+              </p>
+              <p class="text-dezine-small-grey">
+                <label>
+                  <input type="checkbox" name="subscribe">
+                </label>
+                Only my favorite sounds
+              </p>
+
+              <button class="apply-button">
+                <p class="text-dezine-small-grey text-white">Apply</p>
+              </button>
+
+            </span>
+
+          </div>
+          <div class="popup">
+            <button class="filter-button-mobile" onclick="togglePopup('popup1')"><img
+                src="/src/assets/Music-img/Frame 28 (2).svg"></button>
+            <span class="popuptext" id="popup1">
+              <p class="text-dezine-small-grey">Filter</p>
+
+              <img class="closeButton" onclick="closePopup('popup1')" src="/src\assets\Music-img\Frame 82 (1).svg">
+              <p class="text-dezine-small-grey">Filter</p>
+
+            </span>
+          </div>
+
+
+          <!--Музыка для табов-->
+          <div class="tab-content" id="content-1">
+            <div id="MusicPlayerContent"></div>
+          </div>
+          <div class="tab-content" id="content-2">
+
+          </div>
+          <div class="tab-content" id="content-3">
+
+          </div>
+          <div class="tab-content" id="content-4">
+
+          </div>
+          <div class="tab-content" id="content-5">
+
+          </div>
+          <div class="tab-content" id="content-6">
+
+          </div>
+        </div>
+
+
+        <a href="" class="music-link-text">See all sound effects</a>
+      </div>
+
+    </div>
+    <script>
+      fetch('/src/components/MusicPlayer/MusicPlayerContent.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('MusicPlayerContent').innerHTML = data;
+
+          // Клонирование и добавление с новыми id
+          let content = document.getElementById('MusicPlayerContent').innerHTML;
+
+          let div2 = document.createElement('div');
+          div2.id = 'MusicPlayerContent2';
+          div2.innerHTML = content;
+          document.getElementById('content-2').appendChild(div2);
+
+          let div3 = document.createElement('div');
+          div3.id = 'MusicPlayerContent3';
+          div3.innerHTML = content;
+          document.getElementById('content-3').appendChild(div3);
+
+          let div4 = document.createElement('div');
+          div4.id = 'MusicPlayerContent4';
+          div4.innerHTML = content;
+          document.getElementById('content-4').appendChild(div4);
+        });
+    </script>
+
+    <style>
+      .slider-styled,
+      .slider-styled .noUi-handle {
+        box-shadow: none;
+      }
+
+      /* Hide markers on slider handles */
+      .slider-styled .noUi-handle::before,
+      .slider-styled .noUi-handle::after {
+        display: none;
+      }
+
+      .slider-styled .noUi-handle .noUi-touch-area {
+        border: 1px solid transparent;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        width: auto;
+        height: auto;
+      }
+
+      /* Show a border when hovering the area the handle responds to */
+      .slider-styled .noUi-handle:hover .noUi-touch-area {
+        cursor: pointer;
+      }
+
+      #invert-connects {
+        height: 10px;
+        margin-right: 25px;
+        margin-top: 40px;
+      }
+
+      #invert-connects .noUi-connect {
+        background: blue;
+      }
+
+      #invert-connects .noUi-handle {
+        height: 14px;
+        width: 14px;
+        top: -3px;
+        right: -7px;
+        /* half the width */
+        border-radius: 9px;
+        background: blue;
+        border: none;
+      }
+
+      .noUi-tooltip {
+        background-color: transparent;
+        color: rgb(90, 90, 90);
+        padding: 5px;
+        border: none;
+        font-size: 12px;
+        color: grey;
+        size: 20px;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+
+</body>
+
+</html>

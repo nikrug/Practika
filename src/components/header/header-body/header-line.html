@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="header-line.css">
+
+</head>
+
+<body>
+  <script src="header.js">
+
+
+  </script>
+  <div class="header-line">
+
+    <header>
+
+      <div class="wrap-logo">
+        <a href="#logo" class="logo" ><img src="/src\assets\header-img\Frame 3.svg"></a>
+      </div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#YouTube">Best of YouTube</a>
+        <a href="#Category">Category</a>
+        <a href="#Upgrages">Upgrages</a>
+        <a href="#FAQ">FAQ</a>
+        <a href="#logo" class="logo"><img src=""></a>
+        <button id="openModal" onclick="openLoginModal()" class="open-modal-button login-text">
+          <div class="active " >
+            Login
+          </div>
+        </button>
+
+
+      </nav>
+
+      <div class="dropdown">
+
+        <button class="dropbtn" onclick="toggleDropdown()"><img src="/src/assets/header-img/Frame 81.svg"></button>
+        <div class="dropdown-content " id="myDropdown">
+
+          <div class="dropdown-header">
+            <img class="img-logo" src="/src\assets\header-img\Frame 3.svg">
+            <button class="close-dropdown" onclick="closeDropdown()"><img  src="/src\assets\LogIn\Frame 82.svg"></button>
+          </div>
+          <div class="dropdown-white-gray">
+            <p>Home</p>
+            <p>Best of YouTube</p>
+            <p>Category</p>
+            <p>Upgrades</p>
+            <p>FAQ</p>
+          </div>
+          <button onclick="openLoginModal()" class=" dropdown-open-modal-button login-text">
+            <div class="active" >
+              Login
+            </div>
+          </button>
+
+        </div>
+      </div>
+
+      <div id="loginModal" class="modal">
+        <div class="login-form">
+          <button class="close" name="leaf" onclick="closeLoginModal()" value="1"><img
+              src="/src\assets\LogIn\Frame 82.svg"></button>
+          <p class="title-text-login">
+            Login</p>
+          <a href="#logo" class="margin-icon-left">
+            <img class="margin-icon-left" src="/src\assets\LogIn\google.svg"><img
+              src="/src\assets\LogIn\facebook.svg"><img class="margin-icon-left" src="/src\assets\LogIn\twitter.svg">
+          </a>
+          <p class="white-gray size-16">or use your email</p>
+          <div class="label-login">
+          <p class="black-gray">Email</p>
+          </div>
+          <form class="email-form">
+            <input class="email-password-container" id="email" type="text" autocomplete="given-name" placeholder="Email">
+          </form>
+          <div class="label-login">
+           <p class="black-gray" >Password</p>
+          </div>
+          <form class="email-form">
+            <input class="email-password-container" id="password" type="text" autocomplete="given-name"
+              placeholder="Password">
+          </form>
+          <div class="label-login-checkbox">
+          <p class="text-dezine-small-grey-label-style">
+            <label>
+              <input type="checkbox" name="subscribe">
+            </label>
+            Remember Me
+          </p>
+        </div>
+          <button class="login-button">
+            <p class="white-gray size-14 text-white" >Login</p>
+          </button>
+          <p class="text-blue size-16 text-blue weight-600" >or Sing Up</p>
+          <p class="white-gray size-16">Forgot password?</p>
+        </div>
+      </div>
+
+
+
+
+
+    </header>
+
+  </div>
+</body>
+
+</html>

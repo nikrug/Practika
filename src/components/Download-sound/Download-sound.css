@@ -1,0 +1,174 @@
+.container-download {
+  text-align: center;
+  height: 696px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0432DF;
+}
+
+.text-download {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color:#EEEEEE;
+  margin:5px 0 30px 0;
+}
+.text-download-common{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color:#EEEEEE;
+}
+.text-small{
+  font-size: 18px;
+}
+.text-medium{
+  font-size: 20px;
+  margin: 55px 0 24px 0;
+ 
+}
+.text-medium-premium{
+  font-size: 20px;
+  margin: 40px 0 40px 0;
+
+}
+.text-large{
+  font-size: 28px;
+  margin: 30px 0 20px 0;
+}
+.text-button{
+  font-size: 14px;
+  font-weight: 600; 
+}
+.text-button-premium{
+  font-size: 14px;
+  color:#0432DF;
+  font-weight: 600;
+}
+.text-download-Title {
+  margin:5px 0 30px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color:#EEEEEE;
+
+}
+.button-downlad
+{
+  width: 138px;
+  height: 52px;
+  background-color:#0432DF;
+  border-radius:15px;
+  border:2px solid #FFFFFF  ;
+}
+.button-downlad-premium
+{
+  width: 138px;
+  height: 52px;
+  border-radius:15px;
+  border:2px ;
+  background-color:#FFFFFF;
+  margin: -100px 0 0 0;
+}
+.blocks-download {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  outline: 2px solid red;
+}
+
+.block-download {
+  width: 300px;
+  height: 300px;
+  text-align: left;
+  background-color: #0432DF;
+  border-radius: 12px;
+  border: 1px solid #CDD6F9;
+  padding-top: 1px;
+  outline: 2px solid red;
+  padding-left: 30px;
+
+}
+.block-download-premium {
+  width: 300px;
+  height: 300px;
+  text-align: left;
+  background-color:#1B4BFF ;
+  border-radius: 12px;
+  border:0px;
+  padding-top: 1px;
+  outline: 2px solid red;
+  padding-left: 30px;
+
+}
+
+.Download-Title-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 5px 0 0 0;
+}
+
+@media (max-width: 700px) {
+  .block-download {
+    width: 300px;
+    height: 310px;
+    text-align: left;
+    background-color: #0432DF;
+    border-radius: 12px;
+    border: 1px solid #CDD6F9;
+    margin-bottom: 50px;
+    outline: 2px solid red;
+  }
+  .block-download-premium {
+    width: 300px;
+    height: 310px;
+    text-align: left;
+    background-color:#1B4BFF ;
+    border-radius: 12px;
+    border:0px;
+    padding-top: 1px;
+    outline: 2px solid red;
+    padding-left: 30px;
+  
+  }
+}
+@media (max-width: 700px) {
+  .container-download {
+    text-align: center;
+    height: 886px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0432DF;
+  }
+  .text-download {
+    margin:0 0 3px 0;
+  }
+  .blocks-download {
+    display: flex;
+    outline: 2px solid red;
+    flex-direction: column;
+    margin:0 0 10px 0;
+  }
+  .block-download {
+    width: 300px;
+    height: 300px;
+    text-align: left;
+    background-color: #0432DF;
+    border-radius: 12px;
+    border: 1px solid #CDD6F9;
+    outline: 2px solid red;
+    margin:0 0 -5px 0;
+  }
+  .Download-Title-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 15px 0 0 0;
+  }
+}/*# sourceMappingURL=Download-sound.css.map */

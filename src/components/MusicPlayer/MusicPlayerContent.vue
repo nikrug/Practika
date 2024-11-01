@@ -54,7 +54,7 @@ export default {
       <p style="color: #4C526A;">0:12</p>
     </div>
 
-    <div class="audio-info-mobile">
+    <div class="audio-info-mobile-tablet">
       <p style="color: #4C526A;">Confused excited crowd slight</p>
       <p style="color: #4C526A;">panic and distress</p>
     </div>

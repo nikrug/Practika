@@ -15,7 +15,7 @@ export default{
         <p class="text-dezine-small-grey"style="flex-direction:row;">Download free copyright sound effect for your YouTube video and any use.</p>
     </div>
 
-    <div class="sub-header__search-midle-container__search-container__search-">
+    <div class="sub-header__search-midle-container__search-container__search-l">
   <form style="margin-bottom: 10px;order:1" >
     <input style="order:1; border: 1; font-family:'Poppins', sans-serif;font-weight: 500;font-size:16px;color: #4C526A; width: 100%; line-height: 60px; padding-left: 50px;" type="text" id="search" name="search" placeholder="Search sound effects">
   </form>
