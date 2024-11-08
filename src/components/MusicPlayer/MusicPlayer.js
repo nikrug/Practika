@@ -51,7 +51,7 @@ function playAudio() {
     playPauseButton.src = "/src/assets/Music-img/pause-button.svg"; // изменяем картинку на кнопке на иконку паузы
   } else {
     audio.pause();
-    playPauseButton.src = "/src/assets/Music-img/Group 1 (1).svg"; // изменяем картинку на кнопке на иконку плея
+    playPauseButton.src = "/src/assets/Music-img/group_1_1.svg"; // изменяем картинку на кнопке на иконку плея
   }
 }
 function changeColor() {

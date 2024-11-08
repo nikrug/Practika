@@ -29,6 +29,33 @@
 .brouse-size-img {
   height: 117px;
   width: 157px;
+  border-radius: 8px;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%; /* Центровка по вертикали */
+  left: 50%; /* Центровка по горизонтали */
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30.96px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  width: 100%;
+  transform: translate(-50%, -50%); /* Смещение для центрирования */
+  color: white; /* Цвет текста */
+
+  
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+
+}
+
+.image-container img {
+  display: block;
 }
 
 @media (max-width: 600px) {
@@ -38,10 +65,11 @@
     outline: 2px solid red;
     padding-left: 10px;
     padding-top: 10px;
+    justify-content: space-around;
   }
   .brouse-by-categoryes-img-container img {
-    margin: -4px; /* Set the margin to create space between the images */
-    margin-top: 5px;
+    margin:  0 2px; /* Set the margin to create space between the images */
+    margin-top: 10px;
   }
   .brouse-by-categoryes-body {
     display: flex;
@@ -53,10 +81,13 @@
   }
   .brouse-size-img {
     height: 70px;
-    width: 138px;
+    width: 130px;
   }
   .brouse-by-categoryes-body {
     width: 100%;
     height: 682px;
+  }
+  .text-overlay {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=brouse-by-categoryes.css.map */

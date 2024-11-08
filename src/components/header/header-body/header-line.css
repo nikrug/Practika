@@ -85,7 +85,7 @@
 .header-line .close-dropdown {
   background: none;
   border: none;
-  margin:0 0 0 calc(110px + 600 * (100vw - 320px) / 600);
+  margin:0 0 0 calc(85px + 600 * (101vw - 320px) / 600);
 }
 
 .header-line .dropdown-header {
@@ -357,6 +357,11 @@ margin-left: 20px;
   .label-login{
     text-align: left;
     width:280px;
+  }
+  .header-line .close-dropdown {
+    background: none;
+    border: none;
+    margin:0 0 0 calc(90px + 600 * (100vw - 320px) / 600);
   }
   .label-login-checkbox{
     text-align: left;
